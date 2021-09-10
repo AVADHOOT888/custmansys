@@ -2,14 +2,14 @@
 {% load static %}
 {% block content %}
 
-{% comment %} <style>
+<style>
 	.profile-pic{
 		max-width: 200px;
 		max-height:200px;
 		margin: 0 auto;
 		border-radius: 50%;
 	}
-</style> {% endcomment %}
+</style> 
 
 <br>
 <div class="row">
@@ -19,8 +19,7 @@
 			<hr>
 			<h3 style="text-align: center">Account Settings</h3>
 			<hr>
-			{% comment %} <img class="profile-pic" src="{{request.user.customer.profile_pic.url}}" > {% endcomment %}
-		
+			<img class="profile-pic" src="{{request.user.customer.profile_pic.url}}" >	
 		</div>
 	</div>
 	<div class="col-md-9">
